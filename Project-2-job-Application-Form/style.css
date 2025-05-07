@@ -1,0 +1,23 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e15c5c;
+    font-family: 'Arial', sans-serif;
+}
+main .container{
+    width: 600px;
+    height: 900px; 
+    margin: 20px auto;
+    background-color: aquamarine;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+
+
+}
+main .container h1{
+    font-size: 30px;
+}
