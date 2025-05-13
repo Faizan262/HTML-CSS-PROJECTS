@@ -5,19 +5,77 @@
 }
 
 body{
-    background-color: #e15c5c;
+    background-color: #ffffff;
     font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 main .container{
-    width: 600px;
-    height: 900px; 
+    width: 700px;
+    height: 850px; 
     margin: 20px auto;
-    background-color: aquamarine;
+    padding: 20px;
+    background-color: rgb(226, 230, 229);
     box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.9);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
 
 
 }
 main .container h1{
     font-size: 30px;
+    margin-bottom: 30px;
 }
+main .container .form{
+    display :grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px, 1fr));
+    grid-gap: 0px 20px;
+}
+
+main .container button{
+    color: #000;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+main .container button:hover{
+    background-color: #000000;
+    color: white;
+    transition: 0.3s;
+}
+
+main .container .form .form_field ,.form_field1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+main .container .form .form_field1{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+main .container .form  label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+main .container .form   input ,textarea ,select {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #000;
+    border: none
+}
+
+
+
+
+
+    
