@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    height: 100%;
+   
+}
+
+main .img1{
+    background-image: url("images/2.jpg");
+    min-height: 700px;
+}
+
+     
+
+main .img2{
+    background-image: url("images/1.jpg");
+    min-height: 500px;
+}
+main .img3{
+    background-image: url("images/3.jpg");
+    min-height: 500px;
+}
+
+main .img4{
+    background-image: url("images/4.jpg");
+    min-height: 500px;
+}
+
+.img1 ,.img2 ,.img3, .img4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+   
+}
+
+.img2  .text , .img3  .text{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+   color: rgb(255, 255, 255);
+ 
+    text-align: center;
+}
+.img2 .text span , .img3 .text span{
+    
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(230, 230, 230);
+    
+    font-size: 65px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.img1 .text , .img4 .text{
+
+    position: absolute;
+    top: 45%;
+    width: 100%;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   
+}
+.img1  .text span , .img4  .text span{
+   
+   
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(235, 231, 231);
+   
+    
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 6px;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.section{
+    background-color: rgb(255, 255, 255);
+    min-height: 500px;
+    padding: 70px 90px;
+    text-align: justify;
+    line-height: 40px;
+    letter-spacing: 1px;
+    
+}
+.section h2{
+    font-family: Courier, monospace;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: rgb(194, 192, 192);
+}
+
+main .section_dark{
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
+
