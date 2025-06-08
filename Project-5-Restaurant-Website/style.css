@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: auto;
+}
+body{
+    font-family: "poppins", sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 170px;
+    width: 90%;
+    padding: 0px 20px;
+    background-color: transparent;
+}
+img{
+    width :20%;
+    height: 130px;
+
+}
+.nav .icon {
+    font-size: 30px;
+ 
+}
+
+main .container{
+    min-height: 1200px;
+    width: 90%;
+    margin: auto;
+    background-color:transparent;
+    
+
+
+}
+
+.top_section{
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    width: 100%;
+
+    padding-bottom: 50px;
+}
+
+.container .top_section .img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 500px;
+    background-color: transparent;
+   
+}
+
+.png{
+    animation: spin 12s linear infinite;
+    transition: all 1s ease-in-out;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+.png:hover{
+    /* transform: scale(1.3); */
+    cursor: none;
+    /* background-color: rgb(85, 142, 27, 0.2); */
+    /* border-radius: 100%; */
+ 
+   
+}
+
+/*animation*/
+@keyframes spin {
+  0%{ transform: rotate(0deg);} 
+  100% { transform: rotate(100deg); }
+}
+
+
+
+.container .top_section .img .text:hover{
+    transform: scale(1.1);
+  
+    
+}
+
+
+.container .top_section .img img{
+    height: 700px;
+    width: 700px;
+}
+
+.container .top_section .img .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 1s ease;
+    
+}
+
+.container .top_section .img .text h3{
+    font-size: 18px;
+    width: 270px;
+    height: 50px;
+    background-color: rgb(85, 142, 27);
+    text-align: center;
+    padding-top: 14px;
+    color: #f4f4f4;
+    font-weight: 300;
+    letter-spacing: 1px;
+    
+}
+.container .top_section .img .text h1{
+    font-size: 70px;
+    width: 600px;
+    
+}
+
+.container .top_section .img .text p{
+    width: 600px;
+}
+
+.container .top_section .img .text .button{
+    background-color: rgb(219, 167, 103);
+    font-size: 33px;
+    padding: 15px;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+}
+
+.container .top_section .services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+    width: 80%;
+    height: 120px;
+    padding-left: 30px;
+    
+}
+.container .top_section .services:hover .service:not(:hover){
+    filter: blur(2px);
+}
+.container .top_section .services .service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+.services .service:hover{
+    
+    box-shadow: 1px 1px 3px  #888888;
+    
+    transform: scale(1.1);
+    
+}
+
+
+.container .top_section .services .service .text{
+        font-size: 19px;
+}
+
+.services .service .icon2{
+    font-size: 60px;
+}
+
+.divider{
+    border-bottom: 2px solid rgb(214, 212, 212);
+}
+
+
+/*------------------GRID-MENU------------------*/
+
+
+
+.grid_section{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.grid_section h3{
+    font-size: 30px;
+   
+    height: 60px;
+    background-color: rgb(123, 197, 49);
+    text-align: center;
+    padding: 10px;
+    color: #f4f4f4;
+    font-weight: 300;
+    letter-spacing: 1px;
+    
+}
+
+.grid_section h2{
+    font-size: 60px;
+    font-weight: 300;
+    
+}
+
+.grid img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.grid_section .grid{
+
+    display: grid;
+    gap: 15px;
+    width: 90%;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(5, 300px);
+    grid-template-areas:
+     "I1 I1 I2 I2 "
+     "I1 I1 I3 I3 "
+     "I4 I4 I3 I3 "
+     "I6 I5 I5 I8 "
+     "I6 I7 I7 I8 ";
+
+    overflow-anchor: none;
+      
+    
+}
+
+.grid .item1{
+    grid-area: I1;
+}
+.grid .item2{
+    grid-area: I2;
+}
+.grid .item3{
+    grid-area: I3;
+}
+.grid .item4{
+    grid-area: I4;
+}
+.grid .item5{
+    grid-area: I5;
+}
+
+.grid .item6{
+    grid-area: I6;
+}
+
+.grid .item7{
+    grid-area: I7;
+}
+.grid .item8{
+    grid-area: I8;
+}
+
+.grid .images:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+/* Second method to use set elemnts in grid
+
+
+.grid .item1{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.grid .item4{
+    grid-row: 1/3;
+    grid-column: 4/4;
+}
+
+.grid .item5{
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+*/
+
+
+/*FOOTER    -----------------*/
+
+
+footer{
+    background-color: bisque;
+    /* background-color:  rgb(85, 142, 27, 0.4) ; */
+    height: 500px;
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links{
+    display :flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #4e4c4c;
+    font-size: 20px;
+}
+.contact{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact input{
+    height: 30px;
+    padding: 10px;
+}
+.contact .icons{
+    display: flex;
+    
+    gap: 20px;
+}
+.icon{
+    font-size: 40px;
+}

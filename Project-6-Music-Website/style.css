@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    height: 2000px;
+    color: black;
+}
+header{
+    height: 100px;
+    width:100%;
+    background-color: #0d1d6a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px 0px 200px;
+    position: sticky;
+    top: 0px;
+
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+a,ul{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    list-style:none;
+
+}
+.main{
+    width: 100%;
+    min-height: 2000px;
+   
+}
+
+.top_section{
+    width: 100%;
+    min-height:1000px ;
+    background-image: url("images/1.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: solid 1px #fff;
+
+}
+
+.top_section .text{
+    height: 200px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.top_section h1{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+
+}
+
+.top_section h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+
+    line-height: 40px;
+}
+
+.music{
+    width: 100%;
+    min-height: 1000px;
+    background-color: rgb(90, 32, 138);
+    display :flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    gap: 30px;
+    position: relative;
+    padding-top: 100px;
+    
+}
+
+.music .text{
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap : 40px;
+}
+
+.music .icon h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.music .icon{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.music .text h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.music .text h3{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
+
+.music .text .button{
+    width: 250px;
+    height: 70px;
+    background-color: #d63737;
+    color: white;
+    font-size: 25px;
+    border: none;
+}
+.music .text p{
+    font-size: 15px;
+}
+.music img{
+   position: relative;
+   top: 300px;
+   margin-top: -300px;
+}
+.music img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
+.about-music{
+    width: 100%;
+    min-height: 800px;
+    place-items: center;
+    color: black;
+    
+}
+
+.about-music .container{
+    width: 80%;
+    height: 1300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+.about-music h2{
+    font-size: 35px;
+    font-weight: bold;
+ 
+}
+
+.about-music p{
+    font-size: 20px;
+ 
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.btn2{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color:rgb(83, 29, 153) ;
+    border: none;
+    border-radius: 2px;
+}
+
+.about-music img{
+    position:relative ;
+}
+
+ .video{
+    
+    background-image: url("images/2.png");
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.video .container{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    margin-top: -200px;
+}
+
+ h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.video p{
+    font-size: 25px;
+    font-weight: 400px;
+    line-height: 30px;
+    color: white;
+}
+
+.gift-card{
+    height: 600px;
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    color: black;
+    padding: 100px 0px;
+}
+.gift-card img{
+    width: 500px;
+    height: 400px;
+}
+
+.gift-card .container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 50px;
+}
+
+.gift-card .container .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.gift-card h1{
+    color: black;
+}
+.gift-card p{
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+}
+
+.border{
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer .container{
+    width: 100%;
+    height: 100%;
+    background-color: #1831b1;
+    display: flex;
+   
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 200px;
+}
+
+footer .text h1{
+    border-bottom: 2px solid white;
+    width: 100%;
+   
+    font-size: 18px;
+}
+ul{
+     padding-top: 30px;
+}
+footer .text li{
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+footer .copy{
+    height: 100px;
+    width: 100%;
+    background-color: #2610a8;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
